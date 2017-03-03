@@ -1,0 +1,110 @@
+<div class="container">
+ <br/><br/><br/>
+ <div class="row">
+   <div class="col-lg-12">
+     <h1 class="text-center">Admin Panel: Enter All Details.</h1>
+   </div>
+ <div class="col-lg-12">
+   <table height="100%" width="100%" class="table jumbotron table-condensed table-bordered">
+     <tr><td>
+   MOVIE NAME
+ </td>
+ <td colspan="2">
+   <div>
+<select ng-model="map.mapMovie">
+  <option ng-repeat="movi in moviList" value="{{movi.moviTitle}}">{{movi.moviTitle}}</option>
+</select>
+</div>
+ </td></tr>
+   <tr><td>
+   CITY
+ </td>
+ <td colspan="2">
+   <select ng-model="map.mapCity">
+       <option ng-repeat="citi in citiList">{{citi.citiTitle}}</option>
+   </select>
+ </td></tr>
+<tr><td>
+   THEATRE
+ </td>
+ <td colspan="2">
+<select ng-model="map.mapTheatre">
+ <option  ng-repeat="theat in theatList | filter: map.mapCity">{{theat.theatTitle}}</option>
+</select>
+</td></tr>
+<tr><td>
+   SHOWTIMING
+ </td>
+ <td colspan="2">
+<select ng-model="map.mapShowtime">
+ <option  ng-repeat="st in stList">{{st.showtimeTime | date:'h:mm:ss a'}}</option>
+</select>
+</td>
+</tr>
+
+ <td>FROM</td>
+ <td colspan="2"><input ng-model="map.fromDate" type="Date"></td>
+</tr>
+
+
+</table>
+ </div>
+</div>
+<div class="row">
+ <div class="col-xs-12" style="height:30px"></div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<center>
+  <button class="btn btn-primary" ng-click="addMapping()">Display Movie</button>
+</center>
+<!--<button ng-click="insertMapping()" class="btn btn-success btn-lg" style="padding: 10px 50px"><span class="glyphicon glyphicon-plus"></span> ADD MAPPING</button>
+-->
+</div>
+</div>
+<!--
+<div class="row" style="margin-top:20px">
+ <div class="col-lg-12">
+   <table height="100%" width="100%" class="table jumbotron table-condensed table-bordered">
+   <tr>
+ <td>
+   <b>CITY</b>
+   <select ng-model="mapping1.City">
+       <option ng-repeat="o in theatreData | unique : 'city'" value="{{o.city}}">{{o.city}}</option>
+   </select>
+ </td>
+ <td>
+   <b>THEATRE</b>
+<select ng-model="mapping1.Theatre">
+ <option  ng-repeat="t in theatreData | filter :mapping1.City">{{t.name}}</option>
+</select>
+</td></tr>
+</table>
+</div>
+-->
+ <div class="col-lg-12">
+   <table class="table table-bordered table-hover">
+     <tr>
+       <th>TITLE</th>
+       <th>CITY</th>
+       <th>THEATRE</th>
+       <!--<th>DATE</th>-->
+       <th>SHOWTIMINGS</th>
+       <th>FROM</th>
+       
+       <th>DELETE</th>
+     </tr>
+       <tr ng-repeat="map in mapList">
+         <td>{{map.mapMovie}}</td>
+         <td>{{map.mapCity}}</td>
+         <td>{{map.mapTheatre}}</td>
+         <td>{{map.mapShowtime}}</td>
+         <td>{{map.fromDate | date:'fullDate'}}</td>
+
+        <!-- <td><span ng-repeat="i in s.ShowTimings">{{i}}<br/></span></td>-->
+         <td><button ng-click="removeMapping(map)" class="btn btn-danger">DELETE  <span class="glyphicon glyphicon-remove"></span></button></td>
+       </tr>
+     </table>
+   </div>
+ </div>
+</div>

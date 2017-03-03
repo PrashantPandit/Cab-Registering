@@ -1,0 +1,106 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+     	height: 400px;
+       width:  100%;
+
+	     margin : auto;
+
+}
+.backgroundcolor1 {
+    background-color: #1abc9c;
+    color: #fff;
+}
+footer
+{
+  background-color: #474e5d;
+  color: #fff;
+  margin-bottom: 0px;
+  padding: 50px;
+}
+.backgroundcolor4 {
+    background-color: #1abc9c;
+    color: #000;
+}
+
+.container-fluid
+{
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.navbar
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  /*letter-spacing: 4px;*/
+}
+.navbar-nav li a:hover
+{
+  color: #000 !important;
+}
+
+/*.nav-brand
+{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: verdana cursive sans-serif;
+}*/
+
+#textStyle
+{
+  position: absolute;
+  font-weight: bold;
+  font-family: serif;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  /*letter-spacing: 4px;*/
+}
+.floating-box {
+  display: inline-block;
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+
+.padding-for-movie-image
+{
+  display: inline-block;
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+}
+
+.col-sm-5
+{
+  width: 55%;
+  font-size: 25px;
+  display: inline;
+}
+
+}
+  /* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/*Styles for Payment form..*/
+  container{
+    padding-top: 50px;
+  }
+
+.panel-title {
+  display: inline;
+  font-weight: bolder;
+  text-align: center;
+
+}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }

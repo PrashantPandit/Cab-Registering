@@ -1,0 +1,38 @@
+<div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+</div>
+
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <form>
+      <h1 class="text-center">Registration</h1>
+      <div class="col-md-offset-4 col-md-8">
+        <div class="col-md-12">
+          <div class="col-md-6">
+
+            <strong>Username:</strong>
+            <input ng-model="user.username" type="text" class="form-control" required="Enter user name."/>
+
+
+
+            <strong>Password</strong>
+            <input ng-model="user.password" type="password"  maxlength="8" class="form-control" required="Please enter your password more than 6 character."/>
+
+            <strong>Confirm Password</strong>
+            <input ng-model="user.password2" type="password"  maxlength="8" class="form-control" required="Please Re-enter your password."/>
+            <br>
+
+            <center>
+            <button ng-click="register(user)" class="btn btn-primary">Register</button>
+            <button type="reset" name="button" class="btn btn-warning">Reset</button>
+          </center>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div><br><br>

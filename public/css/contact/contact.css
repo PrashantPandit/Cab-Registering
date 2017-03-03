@@ -1,0 +1,9 @@
+.contactFont{
+  font-size: 17px;
+  font-weight: bold;
+  font-family: verdana;
+  color: inherit;
+}
+container{
+  box-shadow: 2px;
+}

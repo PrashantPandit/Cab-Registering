@@ -1,0 +1,53 @@
+<div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>
+
+<div class="container" style="padding-top: 50px;">
+  <div class="row">
+    <div class="col-md-6">
+  <div ng-repeat="j in movi">
+  <div class="well">
+    <h5>{{j.moviTitle}}</h5>
+    <img ng-src="{{j.moviPoster}}" alt="POSTER"  width="150" height="200"  >
+    <h5>Director - {{j.moviDirector}}</h5>
+    <h5>Genre - {{j.moviGenre}}</h5>
+    <h5>Language - {{j.moviLanguage}}</h5>
+  </div>
+  <br>
+  </div>
+</div>
+
+  <div class="col-sm-6">
+  <div class="well">
+  <div>
+  <h3> <center> Order Summary </center></h3>
+  </div>
+  <div>
+    <center><img src="images/2.jpg" style="width:140px; height:140px;"></center>
+  </div>
+  <div>
+    Class :          <p id="cls">  </p>
+    TotalTickets :   <p id="tkt">  </p>
+    Total Amount :   <p id="amt">  </p>
+  </div>
+
+  <div>
+   </div>
+ </div>
+ </div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="col-md-12">
+      <div class="well">
+        <center>
+        <h1 style="color: #228B22; font-weight: bold;">Your Movie is booked, enjoy Movie.</h1>
+      </center>
+      </div>
+  </div>
+</div>

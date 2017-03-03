@@ -1,0 +1,31 @@
+<div class="jumbotron text-center">
+    <h1>Show time</h1>
+    <p>Assign show timing</p>
+    <div class="container">
+        <center>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Show Time</th><th></th>
+                        <!--<th>Show Time</th>-->
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                   <td><input ng-model="st.showtimeTime"  type="time" id="myTime" ></td>
+
+                    <td><button ng-click="addShowtime(st)" class="btn btn-primary">Add</button></td>
+                    <!--<td><button ng-click="updateShowtime(st)" class="btn btn-primary">Update</button></td>-->
+                 </tr>
+                <tr ng-repeat=" st in stList">
+
+                    <td>{{ st.showtimeTime | date:'h:mm:ss a'}}</td>
+                    <td><button ng-click="removeShowtime(st)" class="btn btn-danger">Delete  <span class="glyphicon glyphicon-remove"></span></button></td>
+                 <!--   <td><button ng-click="editShowtime(st)" class="btn btn-info">Edit</button></td>
+					-->
+                </tr>
+            </tbody>
+        </table>
+    </center>
